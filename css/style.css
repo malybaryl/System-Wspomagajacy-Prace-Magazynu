@@ -1,7 +1,7 @@
 body,
 html {
-  background-color: black;
-  color: antiquewhite;
+  background-color: #020f33;
+  color: #e6ebfa;
   margin: 0;
   height: 100%;
 }
@@ -11,14 +11,16 @@ header {
   height: 80px;
   width: 100%;
   padding: 0;
-  background-color: darkgreen;
+  background-color: #2f417a;
+  color: #e6ebfa;
   display: flex;
   align-items: center;
   z-index: 1000;
 }
 
 #logo {
-  background-color: blueviolet;
+  background-color: #2f417a;
+  color: #e6ebfa;
   height: 100%;
   width: 10%;
   text-align: center;
@@ -27,8 +29,8 @@ header {
 }
 
 nav {
-  background-color: antiquewhite;
-  color: blue;
+  background-color: #2f417a;
+  color: #e6ebfa;
   height: 100%;
   width: 64%;
   display: flex;
@@ -45,7 +47,8 @@ nav {
 }
 
 #language {
-  background-color: aqua;
+  background-color: #2f417a;
+  color: #e6ebfa;
   padding-right: 1%;
   width: 5%;
   height: 100%;
@@ -59,7 +62,8 @@ nav {
 }
 
 #logging {
-  background-color: chartreuse;
+  background-color: #2f417a;
+  color: #e6ebfa;
   text-align: right;
   text-transform: uppercase;
   width: 20%;
@@ -76,16 +80,18 @@ nav {
 }
 
 #login {
-  background-color: brown;
+  background-color: #2f417a;
+  color: #e6ebfa;
 }
 
 #signup {
-  background-color: blanchedalmond;
-  color: chocolate;
+  background-color: #2f417a;
+  color: #e6ebfa;
 }
 
 main {
-  background-color: darkblue;
+  background-color: #5b6ea6;
+  color: #e6ebfa;
   min-height: 100vh;
   padding-top: calc(80px);
   box-sizing: border-box;
@@ -98,5 +104,6 @@ main {
 */
 
 footer {
-  background-color: dimgray;
+  background-color: #2f417a;
+  color: #e6ebfa;
 }

@@ -23,3 +23,17 @@ export class HelloWorld {
     console.log(this._text + " | Date: " + this.#date);
   };
 }
+
+// dziedziczenie
+export class HelloWorldExt extends HelloWorld {
+  constructor(text, a, b) {
+    super(text);
+    this._a = a;
+    this._b = b;
+  }
+
+  calculateAndPrint = function () {
+    let sum = this._a + this._b;
+    console.log(this._text + " | " + this._a + " + " + this._b + " = " + sum);
+  };
+}

@@ -1,17 +1,20 @@
-body {
+body,
+html {
   background-color: black;
   color: antiquewhite;
   margin: 0;
+  height: 100%;
 }
 
 header {
   position: fixed;
-  height: 10%;
+  height: 80px;
   width: 100%;
   padding: 0;
   background-color: darkgreen;
   display: flex;
   align-items: center;
+  z-index: 1000;
 }
 
 #logo {
@@ -83,7 +86,16 @@ nav {
 
 main {
   background-color: darkblue;
+  min-height: 100vh;
+  padding-top: calc(80px);
+  box-sizing: border-box;
 }
+
+/*
+#content {
+  
+}
+*/
 
 footer {
   background-color: dimgray;

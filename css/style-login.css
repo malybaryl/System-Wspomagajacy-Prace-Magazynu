@@ -1,0 +1,30 @@
+html,
+body {
+  background-color: #020f33;
+  color: #e6ebfa;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: larger;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  display: flex;
+}
+#container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  align-self: center;
+  background-color: #93a2cf;
+  border: 2px solid #e6ebfa;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  color: #020f33;
+}

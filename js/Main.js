@@ -4,7 +4,7 @@ class Main {
   #tilesArray = [];
 
   constructor() {
-    this.generateTiles(20);
+    this.generateTiles(30);
   }
 
   generateTiles(amountOfImages) {

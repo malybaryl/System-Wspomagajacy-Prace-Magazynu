@@ -1,4 +1,4 @@
-package org.example.magazyn;
+package org.example.magazyn.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package org.example.magazyn;
+package org.example.magazyn.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

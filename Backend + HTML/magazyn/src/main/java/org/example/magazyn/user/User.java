@@ -1,4 +1,4 @@
-package org.example.magazyn;
+package org.example.magazyn.user;
 
 import jakarta.persistence.*;
 

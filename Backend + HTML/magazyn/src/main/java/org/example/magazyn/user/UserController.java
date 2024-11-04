@@ -17,7 +17,7 @@ public class UserController {
 
     @GetMapping("/")
     public String index(Model model) {
-        return "index";
+        return "login";
     }
 
     @GetMapping("/login")

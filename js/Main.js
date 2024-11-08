@@ -3,8 +3,10 @@ import Tile from "./Tile.js";
 class Main {
   #tilesArray = [];
 
+
   constructor() {
     this.generateTiles(30);
+    
   }
 
   generateTiles(amountOfImages) {

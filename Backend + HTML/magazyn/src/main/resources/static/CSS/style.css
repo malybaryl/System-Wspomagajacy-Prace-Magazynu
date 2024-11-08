@@ -78,15 +78,31 @@ nav {
 
 #search-bar {
   width: 25%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 16px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 410px;
   box-sizing: border-box;
   margin-left: 33%;
 }
+
+#search-bar-container img {
+  display: block;
+  height: 26px;
+  position: absolute; 
+  top: 50%;
+  left: 34%; 
+  transform: translateY(-50%);
+  padding-top: 0; 
+  padding-bottom: 0; 
+}
+
+#search-bar input {
+  width: 100%;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 410px;
+}
+
 
 #logging {
   background-color: #2f417a;

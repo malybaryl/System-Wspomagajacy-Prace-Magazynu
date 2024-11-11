@@ -1,4 +1,7 @@
+
+
 <!DOCTYPE html>
+<!REJESTRACJA>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,22 +38,23 @@
           />
 
           <input
-          type="firstname"
-          name="firstname"
-          id="firstname"
-          placeholder="First name"
+          type="username"
+          name="username"
+          id="username"
+          placeholder="Username"
           minlength="3"
           maxlength="30"
           />
 
           <input
-          type="lastname"
-          name="lastname"
-          id="lastname"
-          placeholder="Last name"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
           minlength="3"
           maxlength="30"
           />
+
 
           <input
             type="password"
@@ -69,57 +73,6 @@
             minlength="3"
             maxlength="30"
           />
-
-          <div class="date-selectors">
-            <select id="day" name="day" required>
-              <option value="">Day</option>
-            </select>
-            
-            <select id="month" name="month" required>
-              <option value="">Month</option>
-            </select>
-            
-            <select id="year" name="year" required>
-              <option value="">Year</option>
-            </select>
-          </div>
-    
-         
-    
-      <script>
-        // Generowanie dni (1-31)
-        const daySelect = document.getElementById("day");
-        for (let day = 1; day <= 31; day++) {
-          let option = document.createElement("option");
-          option.value = day;
-          option.textContent = day;
-          daySelect.appendChild(option);
-        }
-    
-        // Generowanie miesięcy (1-12)
-        const monthSelect = document.getElementById("month");
-        const monthNames = [
-          "January", "February", "March", "April", "May", "June",
-          "July", "August", "September", "October", "November", "December"
-        ];
-        monthNames.forEach((month, index) => {
-          let option = document.createElement("option");
-          option.value = index + 1;
-          option.textContent = month;
-          monthSelect.appendChild(option);
-        });
-    
-        // Generowanie lat (np. od 1900 do bieżącego roku)
-        const yearSelect = document.getElementById("year");
-        const currentYear = new Date().getFullYear();
-        for (let year = currentYear; year >= 1900; year--) {
-          let option = document.createElement("option");
-          option.value = year;
-          option.textContent = year;
-          yearSelect.appendChild(option);
-        }
-      </script>
-         
 
           <a href="index-en.html">
             <button type="button">

@@ -46,6 +46,11 @@ header {
   margin-left: 10px;
 }
 
+#logo img {
+  height: 95%;
+  margin-left: 10px;
+}
+
 nav {
   background-color: #2f417a;
   color: #e6ebfa;

@@ -64,6 +64,14 @@ nav {
   margin-right: 10px;
 }
 
+/*If deleted if will underline link "Strefy" and change it to pink idk why (uwu)*/
+#nav-list .nav-list-item a,
+#nav-list .nav-list-item a:visited,
+#nav-list .nav-list-item a:hover,
+#nav-list .nav-list-item a:active {
+    color: #e6ebfa; 
+    text-decoration: none; 
+}
 
 #search-bar-container {
   position: fixed;

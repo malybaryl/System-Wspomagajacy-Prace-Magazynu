@@ -66,12 +66,28 @@
 </header>
 
 <div id="search-bar-container">
-  <div id="search-bar">
-    <!-- live server-->
-    <!--<img src="../static/data/images/search.png">-->
-    <!-- spring boot -->
-    <img src="../data/images/search.png">
-  <input type="search" placeholder="Szukaj..."> </input>
+  <div id="search-controls">
+    <input type="text" 
+           id="search-input" 
+           placeholder="Wyszukaj produkt..." 
+           onkeyup="searchProducts()">
+    
+    <div id="filters">
+        <select id="sort-select" onchange="sortProducts(this.value)">
+          <option value="nameAsc">Nazwa (A-Z)</option>
+          <option value="nameDesc">Nazwa (Z-A)</option>
+          <option value="dateAsc">Data (rosnąco)</option>
+          <option value="dateDesc">Data (malejąco)</option>
+          <option value="priceAsc">Cena (rosnąco)</option>
+          <option value="priceDesc">Cena (malejąco)</option>
+        </select>
+
+        <select id="filter-select" onchange="filterProducts(this.value)">
+            <option value="all">Wszystkie produkty</option>
+            <option value="expired">Przeterminowane</option>
+            <option value="valid">Ważne</option>
+        </select>
+    </div>
   </div>
 </div>
 

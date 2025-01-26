@@ -1,5 +1,5 @@
 # Inżynieria Oprogramowania - Projekt - Sem.5 - Sekcja 4
-
+##**To repozytorium to tylko kopia, pełne repozytorium znajduje się tutaj: [Repozytorium]("https://github.com/IO-SEM-5-SEKCJA-4/IO-SEM-5")**
 ## Temat Projektu
 
 System wspomagający obsługę magazynu.

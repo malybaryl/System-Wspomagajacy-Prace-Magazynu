@@ -3,7 +3,8 @@
 ## **This repository is just a copy, the full repository can be found here: [Repository](https://github.com/IO-SEM-5-SEKCJA-4/IO-SEM-5).**
 ## Temat Projektu
 
-System wspomagający obsługę magazynu.
+System wspomagający obsługę magazynu.  
+
 Warehouse Management System.
 
 ## Autorzy/Autors

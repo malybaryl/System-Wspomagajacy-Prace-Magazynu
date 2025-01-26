@@ -25,7 +25,7 @@ System zarządzania magazynem to lokalny system webowy, którego celem jest uspr
 - **Zarządzanie towarami**: Przechowywanie szczegółowych informacji o towarach (nazwa, ilość, numer seryjny, opis, data ważności).  
 - **Obsługa operacji magazynowych**: Dodawanie, usuwanie oraz blokowanie towarów.  
 
-System korzysta z **MySQL** do obsługi bazy danych oraz frameworka **Bootstrap** do tworzenia responsywnego i estetycznego interfejsu użytkownika. Frontend został zrealizowany przy użyciu **HTML**, **CSS** oraz **JavaScript**.  
+System korzysta z **MySQL** do obsługi bazy danych oraz **Spring Boota** do zarządzania serwerem. Frontend został zrealizowany przy użyciu **HTML**, **CSS** oraz **JavaScript**.  
 
 ---
 

@@ -1,10 +1,12 @@
 # Inżynieria Oprogramowania - Projekt - Sem.5 - Sekcja 4
 ## **To repozytorium to tylko kopia, pełne repozytorium znajduje się tutaj: [Repozytorium](https://github.com/IO-SEM-5-SEKCJA-4/IO-SEM-5)**
+## **This repository is just a copy, the full repository can be found here: [Repository](https://github.com/IO-SEM-5-SEKCJA-4/IO-SEM-5).**
 ## Temat Projektu
 
 System wspomagający obsługę magazynu.
+Warehouse Management System.
 
-## Autorzy
+## Autorzy/Autors
 
 - Kacper Baryłowicz ([malybaryl](https://github.com/malybaryl))
 - Aleksanra Krzyżak ([aleksandra-krzyzak](https://github.com/aleksandra-krzyzak))
@@ -14,6 +16,8 @@ System wspomagający obsługę magazynu.
 - Szymon Stach ([SzymonStach19](https://github.com/SzymonStach19))
 
 ---
+
+**The English description is located at the bottom of the page.**
 
 ## Specyfikacja oprogramowania  
 
@@ -48,3 +52,15 @@ System umożliwia użytkownikom tworzenie kont i logowanie, co pozwala na dostę
 
 #### 5. **Zarządzanie stanami magazynowymi**  
 Towary mogą być oznaczane jako „Zablokowane”, co uniemożliwia dalsze operacje.  
+
+---
+
+### English description  
+This repository contains a local web-based warehouse management system aimed at optimizing operations within a specific warehouse. The software enables efficient management of warehouse infrastructure and resource tracking.  
+
+#### Key features of the system:
+- **User authentication**: Registration and login, with roles (Administrator, Manager, Warehouse Worker, User) and their respective permissions.  
+- **Goods management**: Storing detailed information about goods (name, quantity, serial number, description, expiration date).  
+- **Warehouse operations**: Adding, removing, and blocking goods.  
+
+The system uses **MySQL** for database management, **Bootstrap** for creating a responsive user interface, and **HTML**, **CSS**, and **JavaScript** for the frontend.

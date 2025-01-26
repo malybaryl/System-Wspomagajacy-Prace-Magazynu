@@ -30,7 +30,7 @@ System zarządzania magazynem to lokalny system webowy, którego celem jest uspr
 - **Zarządzanie towarami**: Przechowywanie szczegółowych informacji o towarach (nazwa, ilość, numer seryjny, opis, data ważności).  
 - **Obsługa operacji magazynowych**: Dodawanie, usuwanie oraz blokowanie towarów.  
 
-System korzysta z **MySQL** do obsługi bazy danych oraz frameworka **Bootstrap** do tworzenia responsywnego i estetycznego interfejsu użytkownika. Frontend został zrealizowany przy użyciu **HTML**, **CSS** oraz **JavaScript**.  
+System korzysta z **MySQL** do obsługi bazy danych oraz **Spring Boota** do zarządzania serwerem. Frontend został zrealizowany przy użyciu **HTML**, **CSS** oraz **JavaScript**.  
 
 ---
 
@@ -56,12 +56,53 @@ Towary mogą być oznaczane jako „Zablokowane”, co uniemożliwia dalsze oper
 
 ---
 
-### English description  
-This repository contains a local web-based warehouse management system aimed at optimizing operations within a specific warehouse. The software enables efficient management of warehouse infrastructure and resource tracking.  
+### Instrukcja uruchomienia aplikacji
 
-#### Key features of the system:
-- **User authentication**: Registration and login, with roles (Administrator, Manager, Warehouse Worker, User) and their respective permissions.  
-- **Goods management**: Storing detailed information about goods (name, quantity, serial number, description, expiration date).  
-- **Warehouse operations**: Adding, removing, and blocking goods.  
+Aby uruchomić aplikację, wykonaj następujące kroki:
 
-The system uses **MySQL** for database management, **Bootstrap** for creating a responsive user interface, and **HTML**, **CSS**, and **JavaScript** for the frontend.
+1. **Sklonowanie repozytorium**
+   Skopiuj repozytorium na swoje lokalne urządzenie, używając polecenia Git:
+   ```
+   git clone https://github.com/IO-SEM-5-SEKCJA-4/IO-SEM-5.git
+   ```
+2. **Zainstalowanie Spring Boota**
+   Upewnij się, że masz zainstalowanego Spring Boota na swoim komputerze. Możesz pobrać go ze strony Spring Boot i zainstalować zgodnie z instrukcjami.
+3. **Uruchomienie serwera Apache i MySQL**
+Użyj programu XAMPP do uruchomienia lokalnego serwera Apache oraz serwera MySQL. Możesz pobrać XAMPP ze strony XAMPP. Po zainstalowaniu uruchom Apache i MySQL z interfejsu XAMPP.
+4. **Uruchomienie aplikacji**
+Po skonfigurowaniu środowiska, przejdź do katalogu z projektem i uruchom aplikację przy użyciu Spring Boota:
+```
+./mvnw spring-boot:run
+```
+Aplikacja powinna być dostępna pod adresem: http://localhost:8080.
+
+---
+
+English description
+This repository contains a local web-based warehouse management system aimed at optimizing operations within a specific warehouse. The software enables efficient management of warehouse infrastructure and resource tracking.
+
+Key features of the system:
+User authentication: Registration and login, with roles (Administrator, Manager, Warehouse Worker, User) and their respective permissions.
+Goods management: Storing detailed information about goods (name, quantity, serial number, description, expiration date).
+Warehouse operations: Adding, removing, and blocking goods.
+The system uses MySQL for database management, Spring Boot for server handling, and HTML, CSS, and JavaScript for the frontend.
+
+### How to run the application
+
+To run the application, follow these steps:
+
+1. **Clone the repository**  
+   Clone the repository to your local machine using the following Git command:
+   ```
+   git clone https://github.com/IO-SEM-5-SEKCJA-4/IO-SEM-5.git
+   ```
+2. **Install Spring Boot**
+Ensure that you have Spring Boot installed on your machine. You can download it from Spring Boot and follow the installation instructions.
+3. **Start Apache and MySQL servers**
+Use XAMPP to start the local Apache server and MySQL server. You can download XAMPP from XAMPP. After installation, start Apache and MySQL from the XAMPP interface.
+4. Run the application
+After setting up your environment, navigate to the project directory and run the application using Spring Boot:
+```
+./mvnw spring-boot:run
+```
+The application should be accessible at: http://localhost:8080.

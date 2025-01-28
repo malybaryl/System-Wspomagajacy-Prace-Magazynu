@@ -75,9 +75,6 @@ public class ReservationController {
             System.out.println("Payload status: " + payload.get("status"));
             System.out.println("User: " + principal.getName());
 
-            // Find the current user
-            User currentUser = userRepository.findByEmail(principal.getName());
-
             Reservation.ReservationStatus status =
                     Reservation.ReservationStatus.valueOf(payload.get("status"));
 

@@ -117,16 +117,16 @@ public class ZoneController {
     }
 
     @PostMapping("/assignProduct")
-    public String assignProductToZone(@RequestParam Long zoneId,
-                                      @RequestParam Long productId,
-                                      RedirectAttributes redirectAttributes) {
+    public String assignProduct(@RequestParam Long productId, 
+                            @RequestParam Long zoneId, 
+                            RedirectAttributes redirectAttributes) {
         try {
             zoneService.assignProductToZone(productId, zoneId);
             redirectAttributes.addFlashAttribute("successMessage", "Produkt został przypisany do strefy");
-            return "redirect:/zones";
+            return "redirect:/zones/details/" + zoneId;
         } catch (Exception e) {
             redirectAttributes.addFlashAttribute("errorMessage", e.getMessage());
-            return "redirect:/assignProduct" + zoneId;
+            return "redirect:/zones/assignProduct/" + zoneId;
         }
     }
 

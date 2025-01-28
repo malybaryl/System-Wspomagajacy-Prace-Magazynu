@@ -7,6 +7,7 @@ import org.example.magazyn.entity.Product;
 import org.example.magazyn.entity.User;
 import org.example.magazyn.repository.UserRepository;
 import org.example.magazyn.service.ProductService;
+import org.example.magazyn.service.ZoneService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -21,6 +22,7 @@ public class ProductController {
 
     private final ProductService productService;
     private final UserRepository userRepository;
+    private final ZoneService zoneService; 
 
     @GetMapping("/products")
     public String getProducts(Model model, Principal principal) {
@@ -74,6 +76,10 @@ public class ProductController {
 
     @GetMapping("/products/delete/{id}")
     public String deleteProduct(@PathVariable Long id) {
+        Product product = productService.getProductById(id);
+        if (product.getZone() != null) {
+            zoneService.removeProductFromZone(id, product.getZone().getId());
+        }
         productService.deleteProduct(id);
         return "redirect:/products";
     }
